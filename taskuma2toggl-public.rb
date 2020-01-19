@@ -20,9 +20,6 @@ csv_data.each do |d|
   str_s = d["startTime"] + jst
   str_e = d["endTime"] + jst
   duration = Time.parse(str_e) - Time.parse(str_s)
-#  hour = (( duration / 60 / 60 )).to_i
-#  min  = (( duration - hour * 3600 ) / 60).to_i
-#  sec  = (( duration - hour * 3600 - min * 60 )).to_i
 
   timestr_s = str_s.split(/ /)
   timestr_e = str_e.split(/ /)
